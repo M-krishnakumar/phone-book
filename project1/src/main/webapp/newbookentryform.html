@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<h1>Book Information</h1>
+<hr>
+<h2>New book Entry Form</h2>
+<form method="post" action="SaveST">
+	<div>
+		<label>Title</label>
+		<input type="text" name="booktitle" required minlength="3" maxlength="600">		
+	</div>
+	
+	<div>
+		<label>Author</label>
+		<input type="text" name="bookauthor" required minlength="3" maxlength="100">		
+	</div>
+	
+	<div>
+		<label>Description</label>
+		<textarea rows="5" required name="bookdescription"></textarea>		
+	</div>
+	
+	<div>
+		<label>Price</label>
+		<input type="number" name="bookprice" required min="1" max="100000">		
+	</div>
+	
+	<div>
+		<label>Date of Publishing</label>
+		<input type="date" required name="bookpublishdate">		
+	</div>
+	
+	<div>
+		<label>Type of Book</label>
+		<select name="booktypeid">
+			<option value="2">Education</option>
+			<option value="4">Novels</option>
+			<option value="3">Rhymes</option>
+			<option value="5">Science Fiction</option>
+			<option value="1">Short Stories</option>
+		</select>		
+	</div>
+	
+	<div>
+		<input type="submit" value="Save">	
+		<a href="DisplayListST">Home</a>	
+	</div>
+</form>
+</body>
+</html>
